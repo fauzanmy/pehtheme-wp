@@ -10,31 +10,39 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+	<main id="primary" class="insert-width py-6">
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
+		<div class="insert-grid-2c"><!-- grid 2 cols -->
+			
+			<div class="md:col-span-2 border">
 
-			get_template_part( 'template-parts/content', get_post_type() );
+				<?php
+				while ( have_posts() ) :
+					the_post();
 
-			the_post_navigation(
-				array(
-					'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'pehtheme-wp' ) . '</span> <span class="nav-title">%title</span>',
-					'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'pehtheme-wp' ) . '</span> <span class="nav-title">%title</span>',
-				)
-			);
+					get_template_part( 'template-parts/content', get_post_type() );
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+					the_post_navigation(
+						array(
+							'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'pehtheme-wp' ) . '</span> <span class="nav-title">%title</span>',
+							'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'pehtheme-wp' ) . '</span> <span class="nav-title">%title</span>',
+						)
+					);
 
-		endwhile; // End of the loop.
-		?>
+					// If comments are open or we have at least one comment, load up the comment template.
+					if ( comments_open() || get_comments_number() ) :
+						comments_template();
+					endif;
 
-	</main><!-- #main -->
+				endwhile; // End of the loop.
+				?>
+			</div>
+			<div class="md:col-span-1 border">
+				<?php get_sidebar(); ?>
+			</div>
+		</div><!-- /grid 2 cols -->
+
+	</main><!-- /main -->
 
 <?php
-get_sidebar();
 get_footer();

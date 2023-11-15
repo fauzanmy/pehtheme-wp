@@ -64,7 +64,7 @@
 					</div><!-- right search-icon -->
 				</div><!-- /site-branding -->
 
-				<nav id="site-navigation" class="block mt-3">
+				<nav id="site-navigation" class="block mt-3 close">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'pehtheme-wp' ); ?></button>
 					<?php
 					wp_nav_menu(
@@ -76,7 +76,7 @@
 					?>
 				</nav><!-- /site-navigation -->
 
-				<div id="search-bar" class="block mt-3 open">
+				<div id="search-bar" class="block mt-3 close">
 
 					<form id="search" class="flex items-stretch">
 						<input class="w-full block px-6 py-2 rounded-l-full focus:outline-none border border-zinc-200" type="text" placeholder="Search...">
