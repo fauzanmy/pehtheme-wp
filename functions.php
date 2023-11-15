@@ -19,7 +19,7 @@ if ( ! defined( '_S_VERSION' ) ) {
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function _s_setup() {
+function pehtheme_wp_setup() {
 	/*
 		* Make theme available for translation.
 		* Translations can be filed in the /languages/ directory.
@@ -74,7 +74,7 @@ function _s_setup() {
 	add_theme_support(
 		'custom-background',
 		apply_filters(
-			'_s_custom_background_args',
+			'pehtheme_wp_custom_background_args',
 			array(
 				'default-color' => 'ffffff',
 				'default-image' => '',
@@ -100,7 +100,7 @@ function _s_setup() {
 		)
 	);
 }
-add_action( 'after_setup_theme', '_s_setup' );
+add_action( 'after_setup_theme', 'pehtheme_wp_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -109,17 +109,17 @@ add_action( 'after_setup_theme', '_s_setup' );
  *
  * @global int $content_width
  */
-function _s_content_width() {
-	$GLOBALS['content_width'] = apply_filters( '_s_content_width', 640 );
+function pehtheme_wp_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'pehtheme_wp_content_width', 640 );
 }
-add_action( 'after_setup_theme', '_s_content_width', 0 );
+add_action( 'after_setup_theme', 'pehtheme_wp_content_width', 0 );
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function _s_widgets_init() {
+function pehtheme_wp_widgets_init() {
 	register_sidebar(
 		array(
 			'name'          => esc_html__( 'Sidebar', 'pehtheme-wp' ),
@@ -132,12 +132,12 @@ function _s_widgets_init() {
 		)
 	);
 }
-add_action( 'widgets_init', '_s_widgets_init' );
+add_action( 'widgets_init', 'pehtheme_wp_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
  */
-function _s_scripts() {
+function pehtheme_wp_scripts() {
 	wp_enqueue_style( '_s-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( '_s-style', 'rtl', 'replace' );
 
@@ -147,7 +147,7 @@ function _s_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', '_s_scripts' );
+add_action( 'wp_enqueue_scripts', 'pehtheme_wp_scripts' );
 
 /**
  * Implement the Custom Header feature.
