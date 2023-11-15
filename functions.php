@@ -139,7 +139,7 @@ add_action( 'widgets_init', 'pehtheme_wp_widgets_init' );
  */
 function pehtheme_wp_scripts() {
 	wp_enqueue_style( 'pehtheme-wp-style', get_stylesheet_uri(), array(), PEHTHEME_WP_VERSION );
-	wp_style_add_data( 'pehtheme-wp-style', 'rtl', 'replace' );
+	// wp_style_add_data( 'pehtheme-wp-style', 'rtl', 'replace' );
 
 	// Enqueue TailwindCSS file (main.css)
 	wp_enqueue_style( 'pehtheme-main-style', get_template_directory_uri() . '/main.css', array(), '1.0' );

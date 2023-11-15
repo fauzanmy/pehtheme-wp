@@ -15,7 +15,7 @@
 get_header();
 ?>
 
-	<main id="primary" class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+	<main id="primary" class="insert-width py-6">
 
 		<?php
 		if ( have_posts() ) :
