@@ -1,10 +1,10 @@
 <?php
 /**
- * _s functions and definitions
+ * Pehtheme_WP functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package _s
+ * @package Pehtheme_WP
  */
 
 if ( ! defined( '_S_VERSION' ) ) {
@@ -23,7 +23,7 @@ function pehtheme_wp_setup() {
 	/*
 		* Make theme available for translation.
 		* Translations can be filed in the /languages/ directory.
-		* If you're building a theme based on _s, use a find and replace
+		* If you're building a theme based on Pehtheme_WP, use a find and replace
 		* to change 'pehtheme-wp' to the name of your theme in all the template files.
 		*/
 	load_theme_textdomain( 'pehtheme-wp', get_template_directory() . '/languages' );
