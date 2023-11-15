@@ -12,10 +12,10 @@ msgstr ""
 "POT-Creation-Date: 2020-04-17T21:03:15+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.4.0\n"
-"X-Domain: _s\n"
+"X-Domain: pehtheme-wp\n"
 
 #. Theme Name of the theme
-msgid "_s"
+msgid "Pehtheme WP"
 msgstr ""
 
 #. Theme URI of the theme
@@ -75,7 +75,7 @@ msgstr ""
 #. translators: %s: CMS name, i.e. WordPress.
 #: footer.php:21
 msgid "Proudly powered by %s"
-msgstr ""
+msgstr "Dengan bangga didukung oleh"
 
 #. translators: 1: Theme name, 2: Theme author.
 #: footer.php:27
