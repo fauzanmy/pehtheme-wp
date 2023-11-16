@@ -4,4 +4,5 @@ package-lock.json
 composer.lock
 style.css.map
 style.bak.css
+test-code.php
 .DS_Store

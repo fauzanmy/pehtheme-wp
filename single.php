@@ -14,7 +14,7 @@ get_header();
 
 		<div class="insert-grid-2c"><!-- grid 2 cols -->
 			
-			<div class="md:col-span-2 border">
+			<div class="md:col-span-2">
 
 				<?php
 				while ( have_posts() ) :
@@ -24,8 +24,8 @@ get_header();
 
 					the_post_navigation(
 						array(
-							'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'pehtheme-wp' ) . '</span> <span class="nav-title">%title</span>',
-							'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'pehtheme-wp' ) . '</span> <span class="nav-title">%title</span>',
+							'prev_text' => '<span class="">' . esc_html__( '❮', 'pehtheme-wp' ) . '</span> <span class="line-clamp-1">%title</span>',
+							'next_text' => '<span class="line-clamp-1">%title</span>' . '<span class="">' . esc_html__( '❯', 'pehtheme-wp' ) . '</span>',
 						)
 					);
 
@@ -37,7 +37,7 @@ get_header();
 				endwhile; // End of the loop.
 				?>
 			</div>
-			<div class="md:col-span-1 border">
+			<div class="md:col-span-1">
 				<?php get_sidebar(); ?>
 			</div>
 		</div><!-- /grid 2 cols -->

@@ -142,7 +142,12 @@ function pehtheme_wp_scripts() {
 	// wp_style_add_data( 'pehtheme-wp-style', 'rtl', 'replace' );
 
 	// Enqueue TailwindCSS file (main.css)
-	wp_enqueue_style( 'pehtheme-main-style', get_template_directory_uri() . '/main.css', array(), '1.0' );
+	// wp_enqueue_style( 'pehtheme-main-style', get_template_directory_uri() . '/main.css', array(), '1.0' );
+
+	// Enqueue TailwindCSS file (main.css) under development
+	$style_path = get_template_directory() . '/main.css';
+	$style_version = filemtime($style_path);
+	wp_enqueue_style('pehtheme-main-style', get_template_directory_uri() . '/main.css', array(), $style_version);
 
 	wp_enqueue_script( 'pehtheme-wp-navigation', get_template_directory_uri() . '/js/navigation.js', array(), PEHTHEME_WP_VERSION, true );
 

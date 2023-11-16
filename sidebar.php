@@ -12,6 +12,8 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 }
 ?>
 
-<aside id="secondary" class="insert-width widget-area">
+<aside id="secondary" class="mb-6 lg:sticky lg:top-10">
+
 	<?php dynamic_sidebar( 'sidebar-1' ); ?>
+
 </aside><!-- #secondary -->

@@ -142,6 +142,53 @@
 	.insert-grid-2c {
 		@apply grid grid-cols-1 md:grid-cols-3 gap-6
 	}
+
+	.post {
+		@apply bg-zinc-100 rounded-2xl p-4 md:p-6 lg:p-10 mb-8
+	}
+
+	.wp-post-image {
+		@apply rounded-2xl
+	}
+
+	.entry-footer {
+		@apply flex items-center space-x-4
+	}
+
+	.post-navigation {
+	    @apply my-8;
+	}
+
+	.post-navigation .nav-links {
+	    @apply flex items-center space-x-4
+	}
+
+	.post-navigation .nav-links .nav-previous,
+	.post-navigation .nav-links .nav-next {
+	    @apply bg-zinc-100 rounded-2xl py-4 px-6 relative hover:bg-zinc-200;
+	}
+
+	.post-navigation .nav-links .nav-previous a,
+	.post-navigation .nav-links .nav-next a {
+	    @apply flex items-center space-x-2 before:absolute before:content-[''] before:z-10 before:top-0 before:right-0 before:left-0 before:bottom-0 before:pointer-events-auto
+	}
+
+	.widget {
+		@apply bg-zinc-100 rounded-2xl p-4 md:p-6 mb-6
+	}
+
+	.widget .wp-block-heading {
+		@apply text-xl font-semibold mb-2 before:content-[''] before:border-l before:border-l-8 before:pl-2 before:border-blue-500
+	}
+
+	.widget ul li, .widget ol li {
+		@apply py-4 border-b
+	}
+
+	.widget a:hover {
+		@apply hover:text-blue-500
+	}
+
 }
 
 @layer utilities {

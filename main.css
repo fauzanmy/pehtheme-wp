@@ -729,6 +729,142 @@ video {
   }
 }
 
+.post {
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 244 245 / var(--tw-bg-opacity));
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .post {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .post {
+    padding: 2.5rem;
+  }
+}
+
+.wp-post-image {
+  border-radius: 1rem;
+}
+
+.entry-footer {
+  display: flex;
+  align-items: center;
+}
+
+.entry-footer > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.post-navigation {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.post-navigation .nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.post-navigation .nav-links > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.post-navigation .nav-links .nav-previous,
+	.post-navigation .nav-links .nav-next {
+  position: relative;
+  border-radius: 1rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 244 245 / var(--tw-bg-opacity));
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.post-navigation .nav-links .nav-previous:hover,
+	.post-navigation .nav-links .nav-next:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(228 228 231 / var(--tw-bg-opacity));
+}
+
+.post-navigation .nav-links .nav-previous a,
+	.post-navigation .nav-links .nav-next a {
+  display: flex;
+  align-items: center;
+}
+
+.post-navigation .nav-links .nav-previous a > :not([hidden]) ~ :not([hidden]),
+	.post-navigation .nav-links .nav-next a > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.post-navigation .nav-links .nav-previous a::before,
+	.post-navigation .nav-links .nav-next a::before {
+  pointer-events: auto;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  z-index: 10;
+  --tw-content: '';
+  content: var(--tw-content);
+}
+
+.widget {
+  margin-bottom: 1.5rem;
+  border-radius: 1rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 244 245 / var(--tw-bg-opacity));
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .widget {
+    padding: 1.5rem;
+  }
+}
+
+.widget .wp-block-heading {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+.widget .wp-block-heading::before {
+  border-left-width: 8px;
+  --tw-border-opacity: 1;
+  border-color: rgb(59 130 246 / var(--tw-border-opacity));
+  padding-left: 0.5rem;
+  --tw-content: '';
+  content: var(--tw-content);
+}
+
+.widget ul li, .widget ol li {
+  border-bottom-width: 1px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.widget a:hover:hover {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
 .visible {
   visibility: visible;
 }
@@ -746,6 +882,19 @@ video {
   margin-right: 0.5rem;
 }
 
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
 .ml-auto {
   margin-left: auto;
 }
@@ -754,20 +903,15 @@ video {
   margin-top: 0.75rem;
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
-.mb-8 {
-  margin-bottom: 2rem;
-}
-
 .mt-6 {
   margin-top: 1.5rem;
 }
 
-.mt-4 {
-  margin-top: 1rem;
+.line-clamp-1 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
 }
 
 .block {
@@ -914,11 +1058,6 @@ video {
   line-height: 2rem;
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -927,6 +1066,16 @@ video {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -1012,5 +1161,15 @@ video {
   .md\:py-10 {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:sticky {
+    position: sticky;
+  }
+
+  .lg\:top-10 {
+    top: 2.5rem;
   }
 }

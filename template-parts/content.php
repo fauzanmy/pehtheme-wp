@@ -10,6 +10,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
 	<header class="entry-header mb-8">
 		<?php
 		if ( is_singular() ) :
@@ -27,7 +28,9 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php pehtheme_wp_post_thumbnail(); ?>
+	<div class="my-6">
+		<?php pehtheme_wp_post_thumbnail(); ?>
+	</div>
 
 	<div class="entry-content">
 		<?php
@@ -55,7 +58,10 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
+	<footer class="entry-footer text-base">
+		
 		<?php pehtheme_wp_entry_footer(); ?>
+
 	</footer><!-- .entry-footer -->
+
 </article><!-- #post-<?php the_ID(); ?> -->
