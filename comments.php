@@ -22,11 +22,8 @@ if ( post_password_required() ) {
 
 <div id="comments" class="comments-area">
 
-	<?php
-	// You can start editing here -- including this comment!
-	if ( have_comments() ) :
-		?>
-		<h2 class="comments-title">
+	<?php if ( have_comments() ) : ?>
+		<h2 class="text-xl font-semibold mb-4">
 			<?php
 			$pehtheme_wp_comment_count = get_comments_number();
 			if ( '1' === $pehtheme_wp_comment_count ) {
@@ -49,9 +46,7 @@ if ( post_password_required() ) {
 		<?php the_comments_navigation(); ?>
 
 		<ol class="comment-list">
-			<?php
-			wp_list_comments(
-				array(
+			<?php wp_list_comments( array (
 					'style'      => 'ol',
 					'short_ping' => true,
 				)
