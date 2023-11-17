@@ -21,9 +21,16 @@
 
 		if ( 'post' === get_post_type() ) :
 			?>
-			<div class="entry-meta mt-6">
-				<?php pehtheme_wp_posted_on(); ?> / <?php pehtheme_wp_posted_by(); ?>
-				
+			<div class="entry-meta flex items-center mt-6">
+
+				<div class="mr-2">
+					<?php echo get_avatar( get_the_author_meta( 'ID' ), 72 ); ?>
+				</div>
+
+				<ul class="insert-h-scroll">
+					<li><?php echo get_the_author_meta('display_name'); ?></li>
+					<li>• August 15, 2023 • 3 min read </li>
+				</ul>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->

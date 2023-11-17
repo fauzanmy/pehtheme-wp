@@ -683,6 +683,8 @@ video {
   }
 }
 
+/* Insert componen */
+
 .insert-width {
   margin-left: auto;
   margin-right: auto;
@@ -729,6 +731,25 @@ video {
   }
 }
 
+.insert-h-scroll {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.insert-h-scroll > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.insert-h-scroll {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+/* Article Post  */
+
 .post {
   margin-bottom: 2rem;
   border-radius: 1rem;
@@ -749,9 +770,26 @@ video {
   }
 }
 
+/* 1. entry header */
+
+/* 1.2 entry meta */
+
+.entry-meta .avatar {
+  float: left;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 9999px;
+}
+
+/* 2. entry post thumbnail */
+
 .wp-post-image {
   border-radius: 1rem;
 }
+
+/* 3. entry content */
+
+/* 4. entry footer */
 
 .entry-footer {
   display: flex;
@@ -1202,6 +1240,10 @@ video {
   margin-left: auto;
 }
 
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
 .mt-3 {
   margin-top: 0.75rem;
 }
@@ -1478,10 +1520,6 @@ video {
 
   .lg\:top-10 {
     top: 2.5rem;
-  }
-
-  .lg\:top-8 {
-    top: 2rem;
   }
 
   .lg\:top-6 {

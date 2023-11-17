@@ -131,6 +131,7 @@
 
 @layer components {
 
+	/* Insert componen */
 	.insert-width {
 		@apply max-w-7xl mx-auto px-4 md:px-6 lg:px-8
 	}
@@ -143,13 +144,34 @@
 		@apply grid grid-cols-1 md:grid-cols-3 gap-6
 	}
 
+	.insert-h-scroll {
+		@apply flex items-center flex-nowrap space-x-2 whitespace-nowrap overflow-x-auto
+	}
+
+	/* Article Post  */
+
 	.post {
 		@apply bg-zinc-100 rounded-2xl p-4 md:p-6 lg:p-10 mb-8
 	}
 
+	/* 1. entry header */
+
+	/* 1.2 entry meta */
+
+	.entry-meta .avatar {
+		@apply w-12 h-12 rounded-full float-left
+	}
+
+	/* 2. entry post thumbnail */
+
 	.wp-post-image {
 		@apply rounded-2xl
 	}
+
+	/* 3. entry content */
+
+
+	/* 4. entry footer */
 
 	.entry-footer {
 		@apply flex items-center space-x-4
