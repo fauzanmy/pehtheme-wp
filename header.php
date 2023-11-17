@@ -18,6 +18,7 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
+	<link rel="icon" href="<?php echo esc_url(get_site_icon_url()); ?>" type="image/x-icon">
 </head>
 
 <body <?php body_class(); ?>>
