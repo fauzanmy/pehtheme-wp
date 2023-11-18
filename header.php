@@ -48,9 +48,9 @@
 
 						<div class="relative rounded-full py-1.5 px-6 bg-zinc-100 hover:bg-zinc-200 text-xl font-bold uppercase mx-2">
 							<?php the_custom_logo(); if ( is_front_page() && is_home() ) : ?>
-								<h1 class="text-2xl"><a class="insert-abs-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+								<h1 class="text-xl"><a class="insert-abs-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 								<?php else : ?>
-								<p class="text-2xl"><a class="insert-abs-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+								<p class="text-xl"><a class="insert-abs-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 							<?php endif; ?>
 						</div>
 
