@@ -159,7 +159,7 @@
 	/* 1.2 entry meta */
 
 	.entry-meta .avatar {
-		@apply w-12 h-12 rounded-full float-left
+		@apply w-12 h-12 rounded-full float-left shrink-0
 	}
 
 	/* 2. entry post thumbnail */
