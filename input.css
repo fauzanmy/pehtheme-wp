@@ -145,7 +145,7 @@
 	}
 
 	.insert-h-scroll {
-		@apply flex items-center flex-nowrap space-x-2 whitespace-nowrap overflow-x-auto
+		@apply flex items-center flex-nowrap whitespace-nowrap overflow-x-auto
 	}
 
 	/* Article Post  */
@@ -360,6 +360,27 @@
 
 	.widget a:hover {
 		@apply hover:text-blue-500
+	}
+
+	/* ## Footer  */
+
+	/* 1. Menu container */
+
+	.menu-footer-container li {
+		@apply mb-2
+	}
+
+	.menu-footer-container a {
+		@apply decoration-auto hover:underline font-semibold
+	}
+
+
+	/* 3. Site info */
+	.site-info {
+		@apply border-t pt-4 text-sm
+	}
+	.site-info a {
+		@apply decoration-auto hover:underline
 	}
 
 }
