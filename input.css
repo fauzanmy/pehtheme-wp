@@ -174,7 +174,30 @@
 	/* 4. entry footer */
 
 	.entry-footer {
-		@apply flex items-center space-x-4
+		@apply flex items-center flex-nowrap space-x-2 whitespace-nowrap overflow-x-auto space-x-4
+	}
+
+	.entry-footer .cat-links,
+	.entry-footer .tags-links,
+	.entry-footer .comments-link,
+	.entry-footer .edit-link {
+		@apply py-2 mb-2
+	}
+
+	/* 4.1 categories links */
+	.entry-footer .cat-links a {
+		@apply border px-4 py-2 rounded-full hover:bg-zinc-200 ml-2
+	}
+
+	/* 4.2 tags links */
+	.entry-footer .tags-links a {
+		@apply border px-4 py-2 rounded-full hover:bg-zinc-200 ml-2
+	}
+
+	/* 4.3 comment links - 4.4 edit link */
+	.entry-footer .comments-link,
+	.entry-footer .edit-link a {
+		@apply border px-4 py-2 rounded-full hover:bg-zinc-200
 	}
 
 	/* Next/prev nav post */

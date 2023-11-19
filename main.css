@@ -777,13 +777,82 @@ video {
 
 .entry-footer {
   display: flex;
+  flex-wrap: nowrap;
   align-items: center;
 }
 
 .entry-footer > :not([hidden]) ~ :not([hidden]) {
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.entry-footer {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.entry-footer .cat-links,
+	.entry-footer .tags-links,
+	.entry-footer .comments-link,
+	.entry-footer .edit-link {
+  margin-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* 4.1 categories links */
+
+.entry-footer .cat-links a {
+  margin-left: 0.5rem;
+  border-radius: 9999px;
+  border-width: 1px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.entry-footer .cat-links a:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(228 228 231 / var(--tw-bg-opacity));
+}
+
+/* 4.2 tags links */
+
+.entry-footer .tags-links a {
+  margin-left: 0.5rem;
+  border-radius: 9999px;
+  border-width: 1px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.entry-footer .tags-links a:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(228 228 231 / var(--tw-bg-opacity));
+}
+
+/* 4.3 comment links - 4.4 edit link */
+
+.entry-footer .comments-link,
+	.entry-footer .edit-link a {
+  border-radius: 9999px;
+  border-width: 1px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.entry-footer .comments-link:hover,
+	.entry-footer .edit-link a:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(228 228 231 / var(--tw-bg-opacity));
 }
 
 /* Next/prev nav post */
