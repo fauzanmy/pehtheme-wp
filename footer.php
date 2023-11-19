@@ -26,14 +26,21 @@
 						</svg><!-- /Logo icon -->
 						<span class="text-2xl font-semibold uppercase"><?php bloginfo( 'name' ); ?></span>
      				</a>
-					<p class="font-semibold lg:max-w-sm"><?php bloginfo('description'); ?></p>
 
-					<p class="pb-4 lg:max-w-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore nesciunt exercitationem doloremque nihil quibusdam! Molestiae veritatis quam distinctio ipsam quos explicabo</p>
+     				<?php
+     					$tagline = get_bloginfo('description');
+						if (!empty($tagline)) {
+					    echo '<p class="font-semibold lg:max-w-sm">' . esc_html($tagline) . '</p>';
+						}
+					?>
+
+					<p class="pb-4 lg:max-w-lg">Pehtheme WP: A modern WordPress theme with an elegant design, styling with TailwindCSS for responsive visuals and optimal performance.</p>
+
 				</div>
 
 				<div class="self-center flex flex-col w-full md:w-2/5">
 
-					<h2 class="text-xl font-semibold mb-2">Social Media</h2>
+					<h2 class="text-xl mb-4">Social Media</h2>
 
 					<ul id="social-media" class="flex items-center space-x-4">
 						<li>

@@ -10,11 +10,14 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+
+	<header class="entry-header mb-8">
+		<?php the_title( '<h1 class="text-2xl lg:text-4xl font-bold leading-normal">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
-	<?php pehtheme_wp_post_thumbnail(); ?>
+	<div class="my-6">
+		<?php pehtheme_wp_post_thumbnail(); ?>
+	</div>
 
 	<div class="entry-content">
 		<?php
