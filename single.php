@@ -24,8 +24,8 @@ get_header();
 
 					the_post_navigation(
 						array(
-							'prev_text' => '<span class="">' . esc_html__( '❮', 'pehtheme-wp' ) . '</span> <span class="line-clamp-1">%title</span>',
-							'next_text' => '<span class="line-clamp-1">%title</span>' . '<span class="">' . esc_html__( '❯', 'pehtheme-wp' ) . '</span>',
+							'prev_text' => '<span class="animate-pulse">' . esc_html__( '❮', 'pehtheme-wp' ) . '</span> <span class="line-clamp-1">%title</span>',
+							'next_text' => '<span class="line-clamp-1">%title</span>' . '<span class="animate-pulse">' . esc_html__( '❯', 'pehtheme-wp' ) . '</span>',
 						)
 					);
 
