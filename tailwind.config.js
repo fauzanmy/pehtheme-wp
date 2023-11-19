@@ -3,6 +3,7 @@ module.exports = {
   content: [
     "**/*.php",
     "./js/*.js",
+    "html-template/**/*.html",
     "!node_modules/**/*",
     "!vendor/**/*",
     "!languages/**/*",
