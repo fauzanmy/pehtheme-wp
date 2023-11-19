@@ -50,6 +50,10 @@ function pehtheme_wp_setup() {
 	register_nav_menus(
 		array(
 			'menu-1' => esc_html__( 'Primary', 'pehtheme-wp' ),
+			// Insert sidemenu
+			'menu-2' => esc_html__( 'Side Menu', 'pehtheme-wp' ),
+			// Insert footer menu
+			'menu-3' => esc_html__( 'Footer Menu', 'pehtheme-wp' ),
 		)
 	);
 
