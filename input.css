@@ -148,6 +148,16 @@
 		@apply flex items-center flex-nowrap whitespace-nowrap overflow-x-auto
 	}
 
+	/* Side Navigation */
+
+	.primary-menu li {
+		@apply my-2
+	}
+
+	.primary-menu li a {
+		@apply rounded-full border px-6 py-2 bg-zinc-100 hover:bg-zinc-200
+	}
+
 	/* Article Post  */
 
 	.post {
@@ -373,7 +383,6 @@
 	.menu-footer-container a {
 		@apply decoration-auto hover:underline font-semibold
 	}
-
 
 	/* 3. Site info */
 	.site-info {
